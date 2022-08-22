@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* font-family: 'Montserrat'; */
+/* font-family: 'Fraunces'; */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background: hsl(30, 38%, 92%);
+}
+main{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 58%;
+    background: hsl(30, 38%, 92%);
+
+}
+.box-1{
+    height: 100%;
+}
+picture img{
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+.box-2{
+    max-width: 350px;
+    height: 100%;
+    background: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+}
+.box-2 h3{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+}
+.box-2 h1{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 1rem;
+}
+.box-2 p{
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.box-2 .inside-box-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.box-2 .inside-box-1 h1{
+    margin-right: 1rem;
+    color: hsl(158, 36%, 37%);
+}
+.box-2 .inside-box-1 p{
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+.box-2 button{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box-2 button i{
+    margin-right: 5px;
+}
+.box-2 button:hover{
+    background: hsl(157, 46%, 16%);
+}
+@media (max-width:660px){
+    body{
+        height: 100%;
+        margin: 0 1rem;
+    }
+    main{
+        flex-direction: column;
+        width: 350px;
+        height: inherit;
+    } 
+    .box-1{
+        width: 100%;
+        /* width: 400px; */
+    }
+    picture img{
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .box-2{
+        border-radius: 0 0 1rem 1rem;
+        max-width: 100%;
+        /* width: 400px; */
+    }
+}
